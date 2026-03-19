@@ -27,7 +27,7 @@ const AGE_RANGES = [
   { label: "25 – 30",  min: 25, max: 30  },
 ];
 
-// ─── Stat Card ────────────────────────────────────────────────────────────────
+//  Stat Card
 function StatCard({ icon: Icon, label, value, delta }) {
   const { isDark } = useTheme();
   return (
@@ -46,7 +46,7 @@ function StatCard({ icon: Icon, label, value, delta }) {
   );
 }
 
-// ─── Row Detail Panel ─────────────────────────────────────────────────────────
+//  Row Detail Panel 
 function DetailPanel({ row, onClose, onEdit, isDark }) {
   if (!row) return null;
 
@@ -111,7 +111,7 @@ function DetailPanel({ row, onClose, onEdit, isDark }) {
   );
 }
 
-// ─── Main Page ────────────────────────────────────────────────────────────────
+//  Main Page 
 export default function Home() {
   const { isDark } = useTheme();
 
